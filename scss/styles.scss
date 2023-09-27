@@ -1,0 +1,325 @@
+$principal: #f1f1f1;
+$secundario: #1a1c22;
+@keyframes movimiento {
+    0% {font-size: 1.2rem;}
+    50% {font-size: 1.3rem;}
+    100%{font-size: 1.2rem;}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $principal;
+
+    .navbar{
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: white !important;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.098);
+
+
+        .container-fluid{
+            width: 80%;
+            
+            a{
+                color: #1a1c22;
+            }
+        }
+        .navbar-brand{
+            font-size: 1.2rem;
+        }
+        .navbar-nav{
+            margin: auto;
+        }
+        #mostrarPuntos{
+                margin-right: 1rem;
+            }
+            
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+        .cantidadcarrito{
+            background-color: $secundario;
+            color: white;
+            border-radius: 50%;
+            margin: 10px;
+            text-align: center;
+            padding: 4px;
+            font-size: 1rem;
+            display: none;
+            width: 25px;
+        }
+    }
+    }
+    
+    .banner{
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+        font-size: 3rem !important;
+    }
+    }
+
+    .contenedor-modal{
+        width: 40%;
+        margin: 0 28%;
+        max-height: 88vh;
+        color: white;
+        background-color: #242424fa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        overflow: auto;
+        z-index: 9;
+        top: 6vh;
+        scrollbar-color: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(59, 59, 59, 0.349);
+
+        .modal-content{
+            display: table;
+        }
+        .modal-header{
+            display: flex;
+            color: white;
+            width: 80%;
+
+            .modal-title{
+                text-align: center;
+                display: block;
+                margin: auto;
+            }
+            .modal-header-btn{
+                cursor: pointer;
+            }
+        } 
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed; 
+    width: 100%; 
+  }
+  
+ 
+  td, th {
+    padding: 10px;
+    text-align: center;
+    
+    width: 20%; 
+  }
+  
+  
+  td img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+          
+          
+          .eliminar-producto {
+            cursor: pointer;
+            color: rgb(157, 0, 0);
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+    .btn-comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $secundario;
+        text-decoration: none;
+        background-color: $principal;
+        padding: 0.4rem;
+        margin: 0.5rem;
+        width: 200px;
+        border: none;
+        border-radius: 4px;
+    }
+    }
+   
+
+    .encabezado{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: $secundario;
+        text-align: center;
+        
+    }
+    .dvs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    #canjepuntos{
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+        color: $principal;
+        text-decoration: none;
+        background-color: $secundario;
+        padding: 0.8rem;
+        width: 200px;
+        border: none;
+        border-radius: 4px;
+    }
+    .dvs-spoty{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 4rem;
+    }
+    .subtitulo{
+        font-size: 1.2rem;
+        margin: 0.2rem;
+        color: $secundario;
+        text-align: center;
+    }
+     .enlace{
+        color: $secundario;
+        text-align: center;
+        display: block;
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    .link{
+      text-decoration: none;
+      color: $secundario; 
+      background-color: white;
+      box-shadow: 0px 0px 6px rgba(116, 116, 116, 0.374);
+      padding: 0.5rem;
+      border-radius: 4px;
+      position: absolute;
+      
+        animation-name: movimiento;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-delay: 0.2s;
+    }
+    .productosn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 1rem;
+        flex-wrap: wrap;
+    
+
+        .producto{
+            background-color: $secundario;
+            width: 20rem;
+            border-radius: 4px;
+            margin: 0.5rem;
+            transition: .2s;
+
+            .nombre{
+                color: $principal;
+                font-size: 1.2rem;
+            }
+            .descripcion{
+                color: $principal;
+                font-size: 1rem;
+            }
+            .preview{
+                width: 100%;
+            }
+            .comprar{
+                margin-bottom: 1rem;
+                background-color: $principal;
+                font-size: 1rem;
+                padding: 0.5rem;
+                width: 10rem;
+                border-radius: 4px;
+                transition: .2s;
+            }
+        }
+        .producto:hover{
+            background-color: #35373e;
+        }
+        .comprar:hover{
+            font-size: 1.1rem;
+            padding: 0.6rem;
+        }
+       
+    }
+
+    /*Check-in*/
+    .check-in{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        #mensajeerror{
+            color: rgb(183, 1, 1);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            background-color: $secundario;
+            padding: 2rem;
+            border-radius: 10px;
+
+
+            label{
+                color: white;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+            }
+            input{
+                margin: .5rem;
+                border: none;
+                border-radius: 10px;
+                text-align: center;
+            }
+            #botoncheck{
+                background-color: $principal;
+                margin: 1rem;
+               
+            }
+        }
+    }
+    .ventadiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+       
+
+        .ventahecha{
+                background-color: $secundario;
+                padding: 1rem;
+                color: white;
+                border-radius: 10px;
+        }
+    }
+
+    footer{
+        background-color: white;
+        margin-top: 1rem;
+        .gama{
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+}
+

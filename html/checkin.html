@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Check-in</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Volver al home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <section class="check-in">
+        <h1>Completá con tus datos!</h1>
+        <p id="mensajeerror"></p>
+        <form action="post">
+          <label for="nombre-frm">Nombre y apellido</label>
+          <input type="text" name="nombre" id="nombre-frm">
+          <label for="dni-frm">Dni</label>
+          <input type="number" name="dni" id="dni-frm">
+          <label for="credito">Numero de tarjeta</label>
+          <input type="number" name="tarjeta" id="credito">
+          <label for="cvv-frm">CVV</label>
+          <input type="number" name="cvv" id="cvv-frm">
+          <input type="button" value="enviar" id="botoncheck">
+        </form>
+      </section>
+      <div id="realizado"></div>
+    </main>
+    <footer>
+      <p class="gama">@Gamaliel Lucero | CoderHouse</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/checkin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Michael Jackson Dangerous",
+        "precio": 30000.00,
+        "img": "https://static.musictoday.com/store/bands/4771/product_600/Y4LPMJ002.png",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "The Rose Light Stick Oficial",
+        "precio": 20000,
+        "img":"https://images.squarespace-cdn.com/content/v1/62aba00b38e04e2f8afbb2ba/a92ac3f1-c420-4ef4-9fc9-bc142cd3f409/CRADLE.png",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "BTS Be Deluxe album",
+        "precio": 14000.00,
+        "img": "https://jarpemusic.cl/wp-content/uploads/2021/12/BTS-Be-Deluxe.png",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Michael Jackson HIStory",
+        "precio": 28000.00,
+        "img" : "https://static.musictoday.com/store/bands/4771/product_large/Y4CDMJ003.png",
+        "cantidad": 1
+    }
+]
